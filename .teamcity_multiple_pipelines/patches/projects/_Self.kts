@@ -14,4 +14,10 @@ changeProject(DslContext.projectId) {
         "Unexpected description: '$description'"
     }
     description = "Project description"
+
+    params {
+        add {
+            param("parameter", "project_level")
+        }
+    }
 }
