@@ -6,6 +6,10 @@ import jetbrains.buildServer.configs.kotlin.buildSteps.maven
 object BuildTriangle : BuildType({
     name = "Build: triangle"
 
+    params {
+        param("level", "build")
+    }
+
     vcs {
         root(_Self.vcsRoots.HttpsGitlabComTcqaTestTriangleCheckerRefsHeadsMaster)
     }
