@@ -1,0 +1,16 @@
+jobs:
+  Job1:
+    name: 'Job: script check'
+    steps:
+      - type: script
+        name: Check readme
+        script-content: echo ./README.md
+  Job1_2:
+    name: 'Job: Test vector'
+    steps:
+      - type: script
+        docker-image: scottyhardy/docker-wine:latest
+        name: Start exe tests
+        script-content: wine ./test_vector.exe
+    dependencies:
+      - Job1

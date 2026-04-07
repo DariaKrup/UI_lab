@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="3a3e03a8-5146-4e43-a771-6c0619fb0269" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2025.3/project-config.xsd">
+  <name>Pipelines in XML</name>
+  <parameters>
+    <param name="teamcity.internal.pipelines.creation.enabled" value="true" />
+  </parameters>
+  <project-extensions>
+    <extension id="PROJECT_EXT_972" type="versionedSettings">
+      <parameters>
+        <param name="buildSettings" value="ALWAYS_USE_CURRENT" />
+        <param name="credentialsStorageType" value="credentialsJSON" />
+        <param name="enabled" value="true" />
+        <param name="ignoreChangesInDependenciesAndVcsSettings" value="false" />
+        <param name="rootId" value="PipelinesInXML_HttpsGithubComDariaKrupUiLabRefsHeadsMaster" />
+        <param name="settingsPath" value=".teamcity_xml_pipelines" />
+        <param name="showChanges" value="false" />
+      </parameters>
+    </extension>
+  </project-extensions>
+</project>
+
